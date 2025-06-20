@@ -1,3 +1,4 @@
+
 `flutter_bloc` 是基于 BLoC（Business Logic Component）模式的 Flutter 状态管理库，它封装了 `bloc` package，帮助我们更清晰地组织业务逻辑与 UI 的分离。核心思想是 **事件驱动** 和 **状态响应**。
 
 ---
@@ -504,7 +505,7 @@ final name = context.select<UserBloc, String?>((bloc) {
 * 如何用 `BlocConsumer` 分离 UI 构建和副作用（如错误提示）
 * 如何用 `watch` / `select` 实现更细粒度监听
 
-### RepositoryProvider
+# ## 标题RepositoryProvider
 
 `RepositoryProvider` 是 `flutter_bloc` 提供的一个工具类，作用是将“**非 Bloc 的对象**（如 Repository、Service、API 客户端）注入到 widget tree 中”，供 Bloc 或其他组件使用。它本质上是一个语义化的 `Provider`，目的是让依赖注入更加清晰和语义化。
 
@@ -878,20 +879,4 @@ child: MultiBlocProvider(
 
 ### ✅ 总结
 
-你现在的结构已经非常标准、清晰，完全符合企业级 Flutter 项目推荐架构。如果你接下来还需要：
-
-* 添加多个模块（如 Auth、Notifications）
-* 支持依赖多个 Repository 的 Bloc
-* 封装测试用 mock wrapper
-* 生成 boilerplate 模板
-
-我都可以帮你进一步扩展。
-
-
-
-
-
-
-
-
-
+你现在的结构已经非常标准、清晰，完全符合企业级 Flutter 项目推荐架构。
